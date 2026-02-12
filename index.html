@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="refresh" content="11">
+<title>stochastic flux</title>
+<style>
+*{margin:0;padding:0}
+html,body{width:100vw;height:100vh;overflow:hidden}
+body{background:#000;color:#888;font:1.2rem/1.6 monospace;padding:2rem;box-sizing:border-box}
+.r{color:#c00}
+</style>
+</head>
+<body>
+<script>
+for(let i=0;i<2048;i++){let n=Math.random().toString(36).slice(2,8),c=Math.random()<.01?' class="r"':'';document.write(`<span${c}>${n}</span> `)}
+</script>
+</body>
+</html>
